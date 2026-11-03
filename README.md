@@ -27,7 +27,8 @@ sehat-go-react/
     ├── public/                # Static brand assets and vectors
     ├── src/
     │   ├── assets/            # Component media assets
-    │   ├── components/        # Reusable UI components (Navbar, DoctorCard, SlotPicker, etc.)
+    │   ├── components/        # Reusable UI components (Navbar, DoctorCard, EmptyState, etc.)
+    │   ├── services/          # Storage & data access layer (safeGetStorage, safeSetStorage)
     │   ├── types.ts           # Centralized domain contracts (Doctor, Booking, UserSession)
     │   ├── App.css            # Global design tokens and layout styling
     │   ├── App.tsx            # Root application layout and route views
@@ -70,7 +71,8 @@ sehat-go-react/
 - [x] **Workspace Setup:** Vite 8 + React 19 + TypeScript build pipeline.
 - [x] **Design Tokens:** Ported Sehat Go color variables, typography, and card tokens.
 - [x] **Domain Contracts:** Mirrored `Doctor`, `Booking`, `UserSession`, and `PatientRecord` interfaces in `src/types.ts`.
-- [ ] **Component Library:** Build `<Navbar />`, `<DoctorCard />`, `<SearchHero />`, and `<StatusPill />`.
+- [x] **Storage Service:** Type-safe localStorage wrapper (`safeGetStorage`, `safeSetStorage`).
+- [ ] **Component Library:** Build `<Navbar />` (done), `<EmptyState />` (done), `<DoctorCard />`, `<SearchHero />`, and `<StatusPill />`.
 - [ ] **Dynamic Directory View:** Multi-district filtering, specialty routing, and dual-mode sorting in React.
 - [ ] **Booking Engine:** 4-day calendar slider, slot conflict state, and printable confirmation pass.
 - [ ] **Dual-Portal Dashboard:** Role-based doctor patient queue and patient appointment timeline.
